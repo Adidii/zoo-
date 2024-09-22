@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo1 - Bienvenue au Zoo</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar transparent">
+            <div class="container">
+                <a href="/" class="logo">Zoo1</a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                    <li><a href="#horaires">Horaires</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Slider -->
+<section class="slider">
+    <div class="slide active">
+        <img src="{{ asset('images/image1.png') }}" alt="Image 1">
+    </div>
+    <div class="slide">
+        <img src="{{ asset('images/image2.png') }}" alt="Image 2">
+    </div>
+    <div class="slide">
+        <img src="{{ asset('images/image3.png') }}" alt="Image 3">
+    </div>
+
+    <!-- Boutons de navigation -->
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</section>
+
+
+    <!-- Contenu principal -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <!-- Services content here -->
+    </section>
+
+    <!-- Section Avis -->
+<section id="avis">
+    <h2>Ce que disent nos visiteurs</h2>
+    <div class="avis-container">
+        <div class="avis-slide">
+            <p>"Incroyable expérience, nous avons adoré les animaux !"</p>
+            <span>- Marc</span>
+        </div>
+        <div class="avis-slide">
+            <p>"Un excellent moment passé en famille. Je recommande !"</p>
+            <span>- Sarah</span>
+        </div>
+        <div class="avis-slide">
+            <p>"Les enfants étaient ravis, beaucoup à apprendre."</p>
+            <span>- Lucas</span>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Zoo1. Tous droits réservés.</p>
+    </footer>
+
+    <script src="{{ asset('js/app.js') }}"></script>
+</body>
+</html>

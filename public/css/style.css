@@ -1,0 +1,255 @@
+/* Global - Thème de couleurs naturelles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5DC; /* Beige doux */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(46, 139, 87, 0.9); /* Vert foncé */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a.logo {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar .nav-links a:hover {
+    color: #FFD700; /* Doré */
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    height: 60vh; /* Hauteur du slider */
+
+        background: url("/images/image1.png") no-repeat center center/cover;
+    
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider .prev, .slider .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slider .prev:hover, .slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Services */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #87CEEB; /* Bleu ciel pour une atmosphère "nature" */
+}
+
+.services-container {
+    background: url("/images/image2.png") no-repeat center center/cover;
+    background-size: cover;
+    padding: 50px 20px;
+}
+
+
+.service {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #2E8B57;
+}
+
+.service p {
+    color: #555;
+}
+
+/* Section Avis */
+.avis-container {
+    background-color: #F5F5DC;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avis-slide {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.avis-slide p {
+    font-style: italic;
+    color: #333;
+}
+
+.avis-slide span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8B4513; /* Brun foncé */
+}
+
+/* Horaires */
+.horaires {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+.horaires h2 {
+    color: #2E8B57;
+}
+
+.horaires p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Formulaire de Contact */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+form input, form textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8B4513;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slide.active {
+    display: block;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
